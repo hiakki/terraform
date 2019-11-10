@@ -1,5 +1,5 @@
 provider "aws" {
-region = "ap-south-1"
+region = "us-east-2"
 }
 
 resource "aws_instance" "ubuntu" {
@@ -9,7 +9,7 @@ vpc_security_group_ids=["sg-059e3a91e496bab98"]
 subnet_id="subnet-0bad40a5c43a62dcf"
 
 tags {
-Name = "Ubuntu 18.04"
+Name = "Host A"
 }
 }
 
@@ -21,6 +21,6 @@ vpc_security_group_ids=["sg-059e3a91e496bab98"]
 subnet_id="subnet-0bad40a5c43a62dcf"
 
 tags {
-Name = "Windows Server 2016"
+Name = "Host B"
 }
 }
